@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PEC2 de Visualización de Datos del Máster en Ciencia de Datos de la UOC. Trabajo de Juan José Escribano: tres visualizaciones y sus notebooks.">
+  <title>PEC2 · Visualización de Datos · Juan José Escribano</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17233b; background: #f6f8fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; border-top: 5px solid #00c5d4; }
+    main { max-width: 960px; margin: auto; padding: 48px 28px 64px; }
+    .university { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; color: #34425b; }
+    .university strong { font-size: 2rem; letter-spacing: -.08em; color: #000078; }
+    .university span { max-width: 180px; font-size: .8rem; line-height: 1.4; border-left: 1px solid #cbd3dd; padding-left: 16px; }
+    .eyebrow { margin: 0 0 10px; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #456174; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.04em; }
+    .course { margin: 16px 0 8px; color: #4c596e; line-height: 1.6; }
+    .author { margin: 0; font-size: .95rem; }
+    .gallery { margin-top: 38px; border-top: 1px solid #dce2e9; }
+    article { display: grid; grid-template-columns: 260px 1fr; gap: 30px; align-items: center; padding: 28px 0; border-bottom: 1px solid #dce2e9; }
+    .thumbnail { display: flex; height: 170px; align-items: center; justify-content: center; padding: 10px; background: white; border: 1px solid #e3e7ee; border-radius: 6px; }
+    .thumbnail img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+    h2 { font-size: 1.2rem; margin: 0 0 8px; letter-spacing: -.02em; }
+    .number { color: #64748b; font-size: .8rem; margin: 0 0 6px; }
+    .description { color: #4c596e; margin: 0 0 16px; line-height: 1.6; font-size: .95rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+    a { color: #000078; text-underline-offset: 4px; }
+    a:hover { color: #006979; }
+    a:focus-visible { outline: 3px solid #00a7b5; outline-offset: 5px; }
+    .links a { font-size: .9rem; font-weight: 600; }
+    footer { margin-top: 26px; font-size: .8rem; color: #64748b; line-height: 1.6; }
+    @media (max-width: 600px) {
+      main { padding: 30px 20px 40px; }
+      .university { margin-bottom: 30px; }
+      article { grid-template-columns: 1fr; gap: 18px; }
+      .thumbnail { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="university" aria-label="UOC, Universitat Oberta de Catalunya">
+        <strong>UOC</strong>
+        <span>Universitat Oberta<br>de Catalunya</span>
+      </div>
+      <p class="eyebrow">PEC2 · Máster en Ciencia de Datos</p>
+      <h1>Visualización de Datos</h1>
+      <p class="course">Práctica de la asignatura Visualización de Datos del Máster en Ciencia de Datos de la UOC.</p>
+      <p class="author">Alumno: <strong>Juan José Escribano</strong></p>
+    </header>
+
+    <section class="gallery" aria-label="Visualizaciones y notebooks">
+      <article>
+        <a class="thumbnail" href="images/word-cloud.png" aria-label="Ver la nube de palabras a tamaño completo">
+          <img src="images/word-cloud.png" alt="Nube de las palabras más frecuentes en los titulares deportivos de HuffPost.">
+        </a>
+        <div>
+          <p class="number">01</p>
+          <h2>Nube de palabras · Word cloud</h2>
+          <p class="description">Las palabras más frecuentes en los titulares deportivos de HuffPost entre 2012 y 2022.</p>
+          <div class="links">
+            <a href="images/word-cloud.png">Ver imagen</a>
+            <a href="notebooks/PEC2_1.ipynb">Notebook 01 (.ipynb)</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <a class="thumbnail" href="images/waffle-chart.png" aria-label="Ver el gráfico de waffle a tamaño completo">
+          <img src="images/waffle-chart.png" alt="Gráfico de waffle con el reparto por partidas de los Presupuestos Generales del Estado.">
+        </a>
+        <div>
+          <p class="number">02</p>
+          <h2>Gráfico de waffle · Waffle chart</h2>
+          <p class="description">El reparto de los Presupuestos Generales del Estado de 2025 en una cuadrícula de 100 cuadrados.</p>
+          <div class="links">
+            <a href="images/waffle-chart.png">Ver imagen</a>
+            <a href="notebooks/PEC2_2.ipynb">Notebook 02 (.ipynb)</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <a class="thumbnail" href="images/ridgeline-chart.png" aria-label="Ver el gráfico de crestas a tamaño completo">
+          <img src="images/ridgeline-chart.png" alt="Gráfico de crestas de las temperaturas medias diarias por mes entre 2019 y 2025 en España.">
+        </a>
+        <div>
+          <p class="number">03</p>
+          <h2>Gráfico de crestas · Ridgeline chart</h2>
+          <p class="description">La distribución mensual de las temperaturas medias diarias en España entre 2019 y 2025.</p>
+          <div class="links">
+            <a href="images/ridgeline-chart.png">Ver imagen</a>
+            <a href="notebooks/PEC2_3.ipynb">Notebook 03 (.ipynb)</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>Pulsa una miniatura para ver la imagen completa. Los notebooks están disponibles en formato Jupyter (.ipynb).</footer>
+  </main>
+</body>
+</html>
